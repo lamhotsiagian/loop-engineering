@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loop_engineering_lab"
+version = "0.1.0"
+description = "Runnable reference implementation for 'Loop Engineering: A Practitioner's Guide'"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "AI Engineering Insider" }]
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+dev = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
